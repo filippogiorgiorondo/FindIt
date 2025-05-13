@@ -1,0 +1,3 @@
+Ciao questo è un file di prova.
+Cerchiamo la parola pippo in questa frase.
+Vediamo se la trova.
