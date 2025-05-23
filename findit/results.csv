@@ -1,0 +1,3 @@
+PartitionKey,RowKey,ScanTime,BlobName,Query,Match
+SearchResults,log.txt_1748015164.376092,2025-05-23T15:46:04.376092+00:00,log.txt,error,Errore: disco pieno
+SearchResults,log.txt_1748015164.384581,2025-05-23T15:46:04.384581+00:00,log.txt,error,Errore: connessione persa

@@ -1,0 +1,4 @@
+Errore: disco pieno
+Avviso: uso eccessivo di memoria
+Info: backup completato
+Errore: connessione persa
