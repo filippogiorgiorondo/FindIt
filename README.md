@@ -7,7 +7,7 @@ The results found are saved to Azure Table Storage and can be exported in CSV fo
 ## Problem vs Solution 🚨
 Searching for a specific string across a large number of files (e.g. logs, exports, reports) can be extremely time-consuming and error-prone, especially when files are stored in the cloud. Manual inspection of .txt, .json, or .csv files is inefficient and does not scale.
 
-FindIt. Whether you're debugging logs or scanning reports for key terms, FindIt speeds up the process and integrates smoothly with cloud infrastructure.
+Whether you're debugging logs or scanning reports for key terms, FindIt speeds up the process and integrates smoothly with cloud infrastructure.
 
 ## Main Features 🔧
 - Easily connect to an Azurite instance and manage blob containers and files: emulating Azure Blob Storage
@@ -22,9 +22,10 @@ FindIt. Whether you're debugging logs or scanning reports for key terms, FindIt 
 
 - Display info, warnings, and errors with styled formatting and logging for traceability.
 
+## Flowchart: Overview
+![UML Preview](UML.png)
+
 ## How to use it
-![CLI Preview](findit.png)
-As shown in the image, the tool can be used in two ways:
 - For an interactive prompt
 ```text
 python __main__.py
@@ -41,6 +42,8 @@ Where
 --ignore-case <y> / <N>       -> Ignore case in search
 --export-csv <example.csv>    -> Export the table results to a csv file with the specified name
 ```
+- Example
+![CLI Preview](findit.png)
 
 ## Project structure 📁
 ```text
@@ -61,8 +64,5 @@ findit/
 Software: Python 3.9+ - Visual Studio Code with Azurite extension
 Libraries: azure-storage-blob, azure-data-tables, click, rich
 ```
-
-
-
 
 
