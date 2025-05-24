@@ -94,7 +94,7 @@ By default, the script will:
 - Create a container named mio-container (if it doesn't already exist)
 - Upload a sample file named log.txt
 ```
-4. Search for a string inside the uploaded blobs. It is important to have read (How to use it)[https://github.com/filippogiorgiorondo/FindIt?tab=readme-ov-file#how-to-use-it-]
+4. Search for a string inside the uploaded blobs. It is important to have read [How to use it](https://github.com/filippogiorgiorondo/FindIt?tab=readme-ov-file#how-to-use-it-)
 ```text
 python __main__.py
 ```
