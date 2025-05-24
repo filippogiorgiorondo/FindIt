@@ -3,7 +3,7 @@
 ## Table of Contents 📚
 
 - [Intro](-## Intro)
-- [❓ Problem & Solution]([#-problem--solution](https://github.com/filippogiorgiorondo/FindIt?tab=readme-ov-file#problem-vs-solution-))
+- [#-problem--solution](https://github.com/filippogiorgiorondo/FindIt?tab=readme-ov-file#problem-vs-solution-)
 - [🚀 Main Features](#-main-features)
 - [🔧 Installation](#-installation)
 - [🧰 Prerequisites](#-prerequisites)
