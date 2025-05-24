@@ -60,14 +60,14 @@ Where
 ```text
 findit/
 │
-├── __main__.py            # Entry point: launches the CLI application
-├── config.py              # Configuration variables (e.g., connection strings)
-├── scanner.py             # Logic to scan/search blobs in Azure Storage
-├── logger_config.py       # Logger setup and configuration
-├── exporter.py            # Function to export Azure Table to CSV
-├── parser.py              # Utilities to parse file contents (CSV, JSON)
-├── storage.py             # Azure Storage client helpers (blob, tables, containers)
-├── upload_to_container.py # Module to insert blobs into the container
+├── __main__.py              # Entry point: launches the CLI application
+├── config.py                # Configuration variables (e.g., connection strings)
+├── scanner.py               # Logic to scan/search blobs in Azure Storage
+├── logger_config.py         # Logger setup and configuration
+├── exporter.py              # Function to export Azure Table to CSV
+├── parser.py                # Utilities to parse file contents (CSV, JSON)
+├── storage.py               # Azure Storage client helpers (blob, tables, containers)
+├── upload_to_container.py   # Module to insert blobs into the container
 ```
 
 ## Prerequisites 📦
@@ -94,7 +94,7 @@ By default, the script will:
 - Create a container named mio-container (if it doesn't already exist)
 - Upload a sample file named log.txt
 ```
-4. Search for a string inside the uploaded blobs. You can do it in two ways. 
+4. Search for a string inside the uploaded blobs. It is important to have read (How to use it)[https://github.com/filippogiorgiorondo/FindIt?tab=readme-ov-file#how-to-use-it-]
 ```text
 python __main__.py
 ```
