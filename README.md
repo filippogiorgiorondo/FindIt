@@ -2,8 +2,8 @@
 
 ## Table of Contents 📚
 
-- [Intro](-## Intro)
-- [#-problem--solution](https://github.com/filippogiorgiorondo/FindIt?tab=readme-ov-file#problem-vs-solution-)
+- [Intro](https://github.com/filippogiorgiorondo/FindIt?tab=readme-ov-file#intro-)
+- [Problem vs Solution](https://github.com/filippogiorgiorondo/FindIt?tab=readme-ov-file#problem-vs-solution-)
 - [🚀 Main Features](#-main-features)
 - [🔧 Installation](#-installation)
 - [🧰 Prerequisites](#-prerequisites)
