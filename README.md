@@ -1,8 +1,13 @@
-# FindIt - Documentation
-
-## Intro
+# FindIt - Documentation 🔍 
+ 
+## Intro 🧩 
 FindIt is a command-line application that allows you to search for a string within the blobs contained in an Azure Blob Storage container (emulated with Azurite).
 The results found are saved to Azure Table Storage and can be exported in CSV format.
+
+## Problem vs Solution 🚨
+Searching for a specific string across a large number of files (e.g. logs, exports, reports) can be extremely time-consuming and error-prone, especially when files are stored in the cloud. Manual inspection of .txt, .json, or .csv files is inefficient and does not scale.
+
+FindIt. Whether you're debugging logs or scanning reports for key terms, FindIt speeds up the process and integrates smoothly with cloud infrastructure.
 
 ## Main Features 🔧
 - Easily connect to an Azurite instance and manage blob containers and files: emulating Azure Blob Storage
@@ -17,13 +22,27 @@ The results found are saved to Azure Table Storage and can be exported in CSV fo
 
 - Display info, warnings, and errors with styled formatting and logging for traceability.
 
-## Prerequisites
+## How to use it
+![CLI Preview](findit.png)
+As shown in the image, the tool can be used in two ways:
+- For an interactive prompt
 ```text
-Software: Python 3.9+ - Visual Studio Code with Azurite extension
-Libraries: azure-storage-blob, azure-data-tables, click, rich
+python __main__.py
+```
+- Run with arguments
+```text
+python search_blobs.py --container mio-container --table searchresults --query error --ignore-case y --export-csv results.csv
+```
+Where
+```text
+--container <example>         -> Name of the blob container to search
+--table <example>             -> Table name to save results
+--query <example>             -> String to search
+--ignore-case <y> / <N>       -> Ignore case in search
+--export-csv <example.csv>    -> Export the table results to a csv file with the specified name
 ```
 
-## Project structure
+## Project structure 📁
 ```text
 findit/
 │
@@ -37,9 +56,11 @@ findit/
 ├── upload_to_container.py # Module to insert blobs into the container
 ```
 
-
-
-
+## Prerequisites 📦
+```text
+Software: Python 3.9+ - Visual Studio Code with Azurite extension
+Libraries: azure-storage-blob, azure-data-tables, click, rich
+```
 
 
 
