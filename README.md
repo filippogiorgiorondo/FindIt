@@ -1,15 +1,25 @@
-# FindIt - Documentation 🔍 
- 
+# FindIt - Documentation 🔍
+
+## Table of Contents 📚
+
+- [Intro](Intro)
+- [❓ Problem & Solution](#-problem--solution)
+- [🚀 Main Features](#-main-features)
+- [🔧 Installation](#-installation)
+- [🧰 Prerequisites](#-prerequisites)
+- [💻 How to Use It](#-how-to-use-it)
+- [🖼️ UML Overview](#-uml-overview)
+
 ## Intro 🧩 
 FindIt is a command-line application that allows you to search for a string within the blobs contained in an Azure Blob Storage container (emulated with Azurite).
 The results found are saved to Azure Table Storage and can be exported in CSV format.
 
-## Problem vs Solution 🚨
+## Problem vs Solution 💡
 Searching for a specific string across a large number of files (e.g. logs, exports, reports) can be extremely time-consuming and error-prone, especially when files are stored in the cloud. Manual inspection of .txt, .json, or .csv files is inefficient and does not scale.
 
 Whether you're debugging logs or scanning reports for key terms, FindIt speeds up the process and integrates smoothly with cloud infrastructure.
 
-## Main Features 🔧
+## Main Features 🚀 
 - Easily connect to an Azurite instance and manage blob containers and files: emulating Azure Blob Storage
 
 - Scan all blobs in a specific container for a target text string
@@ -22,10 +32,10 @@ Whether you're debugging logs or scanning reports for key terms, FindIt speeds u
 
 - Display info, warnings, and errors with styled formatting and logging for traceability.
 
-## Flowchart: Overview
+## Flowchart: Overview 📈
 ![UML Preview](UML.png)
 
-## How to use it
+## How to use it 💻 
 - For an interactive prompt
 ```text
 python __main__.py
@@ -61,8 +71,33 @@ findit/
 
 ## Prerequisites 📦
 ```text
-Software: Python 3.9+ - Visual Studio Code with Azurite extension
+Software: Python 3.9+ - Visual Studio Code with Azurite extension installed
 Libraries: azure-storage-blob, azure-data-tables, click, rich
 ```
+## Installation ⚙️
+1. Make sure you satisfy requisites
+```text
+https://www.python.org/downloads/                -> To install Python
+https://code.visualstudio.com/download           -> To install VS Code
+Ctrl + Shift + X > Search 'Azurite' > Install    -> In VS Code to install Azurite Extension
+```
+2. Start Azurite from VS Code
+```text
+Ctrl + Shift + P > Digit '>Azurite: Start'
+```
+3. Upload blobs into the container
+```text
+Make sure to have some test files in the same folder where you're running the scripts.
 
-
+By default, the script will:
+- Create a container named mio-container (if it doesn't already exist)
+- Upload a sample file named log.txt
+```
+4. Search for a string inside the uploaded blobs. You can do it in two ways. 
+```text
+python __main__.py
+```
+And fill in the fields required by the program. Or do the following line:
+```text
+python search_blobs.py --container mio-container --table searchresults --query error --ignore-case y --export-csv results.csv
+```
