@@ -1,16 +1,17 @@
 # FindIt - Documentation 🔍
 
-## Table of Contents 📚
+## Table of Contents 📌
 
 - [Intro](https://github.com/filippogiorgiorondo/FindIt?tab=readme-ov-file#intro-)
 - [Problem vs Solution](https://github.com/filippogiorgiorondo/FindIt?tab=readme-ov-file#problem-vs-solution-)
-- [🚀 Main Features](#-main-features)
-- [🔧 Installation](#-installation)
-- [🧰 Prerequisites](#-prerequisites)
-- [💻 How to Use It](#-how-to-use-it)
-- [🖼️ UML Overview](#-uml-overview)
+- [Main Features](https://github.com/filippogiorgiorondo/FindIt?tab=readme-ov-file#main-features-)
+- [Flowchart Overview](https://github.com/filippogiorgiorondo/FindIt?tab=readme-ov-file#flowchart-overview)
+- [How to use it](https://github.com/filippogiorgiorondo/FindIt?tab=readme-ov-file#how-to-use-it)
+- [Project structure](https://github.com/filippogiorgiorondo/FindIt?tab=readme-ov-file#project-structure-)
+- [Prerequisites](https://github.com/filippogiorgiorondo/FindIt?tab=readme-ov-file#prerequisites-)
+- [Installation](https://github.com/filippogiorgiorondo/FindIt?tab=readme-ov-file#installation-%EF%B8%8F)
 
-## Intro 🧩 
+## Intro 📚 
 FindIt is a command-line application that allows you to search for a string within the blobs contained in an Azure Blob Storage container (emulated with Azurite).
 The results found are saved to Azure Table Storage and can be exported in CSV format.
 
