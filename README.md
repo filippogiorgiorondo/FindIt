@@ -100,5 +100,5 @@ python __main__.py
 ```
 And fill in the fields required by the program. Or do the following line:
 ```text
-python search_blobs.py --container mio-container --table searchresults --query error --ignore-case y --export-csv results.csv
+python __main__.py --container mio-container --table searchresults --query error --ignore-case y --export-csv results.csv
 ```
