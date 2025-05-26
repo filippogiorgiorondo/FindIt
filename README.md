@@ -43,7 +43,7 @@ python __main__.py
 ```
 - Run with arguments
 ```text
-python search_blobs.py --container mio-container --table searchresults --query error --ignore-case y --export-csv results.csv
+python __main__.py --container mio-container --table searchresults --query error --ignore-case y --export-csv results.csv
 ```
 Where
 ```text
